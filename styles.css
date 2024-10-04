@@ -1,0 +1,780 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+header {
+    display: flex;
+    background-color: #DD5555;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.button-menu {
+    background-color: #DD5555;
+    border: none;
+    margin-right: 15px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.bouton-nav:link,
+.bouton-nav:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.bouton-nav:hover {
+    text-decoration: none;
+    color: #FFFFFF; 
+}
+
+.clip-container {
+    position: relative;
+    width: 100%;
+}
+
+.img-clip {
+    width: 100%;
+    display: block;
+}
+
+.clip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text-clip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.clip-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer; 
+    color: #000000;
+}
+
+.buttons:link,
+.buttons:visited,
+.buttons:hover {
+    text-decoration: none;
+}
+
+.img-clip-button {
+    padding-left: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-title {
+    margin: 10px auto 10px auto;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.icon-container {
+    background-color: #DD5555;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clip-2 {
+    position: relative;
+}
+
+.img-clip-2 {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.title-clip-2 {
+    position: absolute;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.photo {
+    width: 100%;
+    display: block;
+    border-radius: 100%;
+}
+
+.membre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.mail {
+    background-color: #DD5555;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DD5555;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.title-form {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.formulaire {
+    width: 100%;
+}
+
+.coordonnee {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-form {
+    margin: 5px auto 5px 0px;
+    color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 3px;
+    border: none;
+}
+
+textarea {
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+}
+
+.send {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.button-send {
+    border-radius: 3px;
+    border: none;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Mobile-portrait */
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+    .logo {
+        margin: 5px;
+    }
+    #menu {
+        position: absolute;
+        background-color: #DD5555;
+        left: 0px;
+        width: 100%;
+        z-index: 2;
+    }
+    li {
+        font-size: 12px;
+    }
+    .clip {
+        top: 8%;
+    }
+    .text-clip {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .clip-button {
+        flex-direction: column;
+    }
+    .buttons {
+        width: 85px;
+        height: 25px;
+        margin: 10px auto;
+    }
+    .service {
+        margin-top: 10px;
+    }
+    .icon-container {
+        height: 75px;
+        width: 75px;
+    }
+    .icon {
+        height: 40px;
+    }
+    .title-clip-2 {
+        top: 3%;
+    }
+    .equipe {
+        flex-direction: column;
+    }
+    .membre{
+        height: 275px;
+        margin-top: 15px;
+    }
+    .photo {
+        height: 200px;
+    }
+    .mail {
+        height: 30px;
+        width: 115px;
+    }
+    input[type="text"],
+    input[type="email"] {
+    width: 100%;
+    height: 32px;
+    }
+    textarea {
+        height: 100px;
+    }
+    .button-send {
+        width: 100px;
+        height: 35px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 20px; 
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+/* Mobile-paysage */
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+    .navigation button {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    .logo {
+        width: auto;
+        margin-left: 20px;
+    }
+    .navigation {
+        margin-left: 15px;
+    }
+    .menu-container {
+        height: 40px;
+    }
+    li {
+        height: 100%;
+        margin-right: 5px; 
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    li:hover,
+    .bouton-nav:hover {
+        text-decoration: none;
+        background-color: #6e0707;
+        opacity: 0.5;
+    }
+    .clip {
+        top: 15%;
+    }
+    .text-clip{
+        padding-bottom: 25px;
+    }
+    .clip-button {
+        width: 80%;
+        padding-top: 25px;
+        border-top: 1px solid #FFFFFF;
+    }
+    .buttons {
+        width: 100px;
+        height: 30px;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 80%;
+        margin-top: 30px;
+    }
+    .icon-container {
+        height: 100px;
+        width: 100px;
+    }
+    .icon {
+        height: 50px;
+    }
+    .title-clip-2 {
+        top: 4%;
+        width: 100%;
+    }
+    .equipe {
+        position: relative;
+        top: -225px;
+        background-color: #ffffff;
+        z-index: 2;
+        flex-direction: column;
+    }
+    .membre {
+        height: 350px;
+    }
+    .mail {
+        width: 125px;
+        height: 35px;
+    }
+    footer {
+        margin-top: -200px;
+    }
+    input[type="text"],
+    input[type="email"] {
+    width: 100%;
+    height: 32px;
+    }
+    textarea {
+        height: 100px;
+    }
+    .button-send {
+        width: 100px;
+        height: 35px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 600; 
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+/* Tablette-portrait */
+@media only screen and (min-width: 401px) and (max-width: 960px) and (orientation: portrait) {
+    .navigation button {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    .logo {
+        width: auto;
+        margin-left: 15px;
+    }
+    .navigation {
+        margin-left: 15px;
+    }
+    .menu-container {
+        height: 40px;
+    }
+    li {
+        height: 100%;
+        margin-right: 5px; 
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    li:hover,
+    .bouton-nav:hover {
+        text-decoration: none;
+        background-color: #6e0707;
+        opacity: 0.5;
+    }
+    .clip {
+        top: 22%;
+    }
+    .text-clip{
+        padding-bottom: 25px;
+    }
+    .clip-button {
+        width: 60%;
+        padding-top: 25px;
+        border-top: 1px solid #FFFFFF;
+    }
+    .buttons {
+        width: 100px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .service-container {
+        justify-content: space-around;
+    }
+    .service {
+        width: 45%;
+        margin-top: 30px;
+    }
+    .service-text {
+        font-size: 18px;
+    }
+    .icon-container {
+        height: 100px;
+        width: 100px;
+    }
+    .icon {
+        height: 50px;
+    }
+    .title-clip-2 {
+        top: 175px;
+        width: 100%;
+    }
+    .membre {
+        width: 34%;
+        height: 450px;
+    }
+    .mail {
+        width: 132px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .coordonnee-container {
+        display: flex;
+    }
+    .coordonnee {
+        width: 100%;
+    }
+    .coordonnee:first-of-type {
+        margin-right: 10px;
+    }
+    .text-form {
+        padding-right: 5px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        height: 32px;
+    }
+    textarea {
+        height: 100px;
+    }
+    .button-send {
+        width: 100px;
+        height: 35px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 28px; 
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+/* Tablette-paysage */
+@media only screen and (min-height: 401px) and (max-height: 960px) and (orientation: landscape) {
+    .navigation button {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    .logo {
+        width: auto;
+        margin-left: 15px;
+    }
+    .navigation {
+        margin-left: 30px;
+    }
+    .menu-container {
+        height: 40px;
+    }
+    li {
+        height: 100%;
+        margin-right: 5px; 
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    li:hover,
+    .bouton-nav:hover {
+        text-decoration: none;
+        background-color: #6e0707;
+        opacity: 0.5;
+    }
+    .clip {
+        top: 35%;
+    }
+    .text-clip{
+        padding-bottom: 25px;
+    }
+    .clip-button {
+        width: 50%;
+        padding-top: 25px;
+        border-top: 1px solid #FFFFFF;
+    }
+    .buttons {
+        width: 112px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .service-container {
+        justify-content: space-around;
+    }
+    .service {
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    .service-text {
+        font-size: 18px;
+    }
+    .icon-container {
+        height: 100px;
+        width: 100px;
+    }
+    .icon {
+        height: 50px;
+    }
+    .title-clip-2 {
+        top: 20%;
+        width: 100%;
+    }
+    .membre {
+        height: 350px;
+    }
+    .mail {
+        width: 112px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .coordonnee-container {
+        display: flex;
+    }
+    .coordonnee {
+        width: 100%;
+    }
+    .coordonnee:first-of-type {
+        margin-right: 10px;
+    }
+    .text-form {
+        padding-right: 5px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        height: 32px;
+    }
+    textarea {
+        height: 100px;
+    }
+    .button-send {
+        width: 112px;
+        height: 45px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 600; 
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+/* Ordinateur */
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .navigation button {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    .logo {
+        width: auto;
+        margin-left: 131px;
+    }
+    .navigation {
+        margin-left: 16px;
+    }
+    li {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .clip {
+        top: 220.5px;
+    }
+    .clip-button {
+        width: 391px;
+        padding-top: 25px;
+        border-top: 1px solid #FFFFFF;
+        font-size: 18px;
+    }
+    .buttons {
+        width: 112px;
+        height: 45px;
+    }
+    .title-container {
+        margin: 52px auto 52px auto;
+    }
+    .service-container {
+        margin-bottom: 45px;
+    }
+    .service {
+        width: 358px;
+    }
+    .title-clip-2 {
+        height: 240px;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .equipe {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-top: -425px;
+        height: 492px;
+        z-index: 2;
+    }
+    .mail {
+        width: 132px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .title-form {
+        margin-top: 75px;
+    }
+    form {
+        width: 748px;
+    }
+    .button-send {
+        width: 123px;
+        height: 46px;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 28px; 
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
